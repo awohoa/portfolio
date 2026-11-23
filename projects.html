@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Explore Awoh Biah Owusu-Agyemang's software engineering,
+             data analytics, mobile development, and research projects."
+  >
+
+  <title>Projects | Awoh Biah Owusu-Agyemang</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="projects-page">
+  <!-- Lets keyboard users skip the repeated header. -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Shared navigation matches the homepage. -->
+  <header class="site-header">
+    <div class="container header-layout">
+      <a class="site-name" href="index.html">
+        Awoh Biah Owusu-Agyemang
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro" aria-labelledby="projects-title">
+      <div class="container">
+        <h1 id="projects-title">My Projects</h1>
+
+        <p class="intro">
+            A look into the projects I've worked on throughout my software engineering journey
+        </p>
+
+        <!-- Every link matches a project section ID below. -->
+        <nav class="project-navigation" aria-label="Jump to a project">
+          <a href="#business-pulse">LA Business Pulse</a>
+          <a href="#memory-manager">Virtual Memory Manager</a>
+          <a href="#pink-ops">Pink Ops</a>
+          <a href="#unix-shell">Unix Shell</a>
+          <a href="#cpu-scheduler">CPU Scheduler</a>
+          <a href="#music-library">Music Library</a>
+          <a href="#infection-prevention">AR in Infection Prevention</a>
+          <a href="#monster-tournament">Monster Tournament</a>
+        </nav>
+      </div>
+    </section>
+
+      <!-- PROJECT 1 -->
+      <section
+        id="business-pulse"
+        class="portfolio-project"
+        aria-labelledby="business-pulse-heading"
+      >
+        <div class="container">
+          <article class="project-detail">
+            <p class="project-category">Data Analytics &amp; Web Development</p>
+            <h3 id="business-pulse-heading" class="project-title">
+              LA Business Pulse
+            </h3>
+
+            <p class="tools">
+              Python · Pandas · SQL · SQLite · React · Vite · Recharts ·
+              Git · GitHub
+            </p>
+            <p class="meta">May 2026–Present</p>
+
+            <h4>Project Overview</h4>
+            <p>
+              LA Business Pulse is an interactive data analytics dashboard
+              I'm developing to explore business trends across more than
+              600,000 Los Angeles business records.
+            </p>
+            <p>
+              The project combines my interests in software engineering and
+              business analytics by transforming a large dataset into
+              interactive visualizations that make business information
+              easier to explore and understand.
+            </p>
+
+            <h4>My Contribution</h4>
+            <p>
+              I'm independently developing the project, working on both
+              the data analysis and frontend components.
+            </p>
+            <p>
+              My work includes cleaning and transforming business records
+              using Python and Pandas, querying data with SQL and SQLite,
+              and developing the dashboard using React, Vite, and Recharts.
+            </p>
+            <p>
+              I also use Git and GitHub to track changes and manage the
+              project's development.
+            </p>
+
+            <h4>Key Features</h4>
+            <ul>
+              <li>
+                <strong>Large-Scale Data Processing:</strong>
+                Working with more than 600,000 Los Angeles business records.
+              </li>
+              <li>
+                <strong>Data Cleaning and Transformation:</strong>
+                Preparing raw data for analysis using Python and Pandas.
+              </li>
+              <li>
+                <strong>Database Queries:</strong>
+                Using SQL and SQLite to organize and explore business data.
+              </li>
+              <li>
+                <strong>Interactive Visualizations:</strong>
+                Developing charts to help users identify patterns.
+              </li>
+              <li>
+                <strong>Web-Based Dashboard:</strong>
+                Building an interactive interface using React and Vite.
+              </li>
+            </ul>
+
+            <h4>Skills Demonstrated</h4>
+            <p>
+              Frontend Development · Data Analysis · SQL · Database
+              Management · Data Visualization · Independent Project
+              Development · Problem-Solving
+            </p>
+
+            <h4>What I Learned</h4>
+            <p>
+              Working on LA Business Pulse has strengthened my ability to
+              approach software development from both a technical and
+              analytical perspective. It has also helped me understand the
+              challenges of working with large datasets and presenting
+              complex information through user-friendly interfaces.
+            </p>
+
+            <p class="project-status">
+              <strong>Project Status:</strong> In Progress
+            </p>
+
+            <!-- Add a real screenshot or repository link here when ready. -->
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJECT 2 -->
+      <section
+        id="memory-manager"
+        class="portfolio-project"
+        aria-labelledby="memory-manager-heading"
+      >
+        <div class="container">
+          <article class="project-detail">
+            <p class="project-category">
+              Systems Programming &amp; Operating Systems
+            </p>
+            <h3 id="memory-manager-heading" class="project-title">
+              Virtual Memory Manager
+            </h3>
+
+            <p class="tools">C · GCC/Clang · Command-Line Tools · CSV</p>
+
+            <h4>Project Overview</h4>
+            <p>
+              I developed a virtual memory manager in C that simulates
+              how an operating system translates logical addresses into
+              physical addresses.
+            </p>
+            <p>
+              The program uses a page table, a translation lookaside buffer
+              (TLB), and demand paging to manage memory access. It supports
+              multiple replacement algorithms, allowing me to compare their
+              performance under different memory configurations and workloads.
+            </p>
+
+            <h4>My Contribution</h4>
+            <p>
+              I implemented the memory management simulation, including
+              logical-to-physical address translation, page fault handling,
+              TLB lookups, and page replacement.
+            </p>
+            <p>
+              I added configurable replacement policies, developed CSV
+              logging for memory operations, and conducted experiments to
+              examine how algorithms and memory access patterns affect
+              performance.
+            </p>
+
+            <h4>Key Features</h4>
+            <ul>
+              <li>
+                <strong>Address Translation:</strong>
+                Translates 16-bit logical addresses into physical addresses.
+              </li>
+              <li>
+                <strong>TLB Management:</strong>
+                Implements a 16-entry TLB with LRU and Random replacement.
+              </li>
+              <li>
+                <strong>Page Replacement:</strong>
+                Supports FIFO, LRU, and Random algorithms.
+              </li>
+              <li>
+                <strong>Configurable Memory:</strong>
+                Supports simulations using 128 or 256 physical frames.
+              </li>
+              <li>
+                <strong>Performance Tracking:</strong>
+                Records page faults, TLB hits, and page replacements.
+              </li>
+              <li>
+                <strong>Workload Analysis:</strong>
+                Compares random, sequential, looping, and stride-based
+                memory access patterns.
+              </li>
+            </ul>
+
+            <h4>Skills Demonstrated</h4>
+            <p>
+              C Programming · Systems Programming · Operating Systems ·
+              Algorithm Implementation · File I/O · Performance Analysis ·
+              Debugging
+            </p>
+
+            <h4>What I Learned</h4>
+            <p>
+              This project gave me a deeper understanding of virtual memory
+              management and how operating systems balance memory efficiency
+              with performance.
+            </p>
+            <p>
+              By comparing replacement policies and workloads, I learned
+              how locality, memory access patterns, and available physical
+              memory affect page fault rates and TLB performance.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJECT 3 -->
+      <section
+        id="pink-ops"
+        class="portfolio-project"
+        aria-labelledby="pink-ops-heading"
+      >
+        <div class="container">
+          <article class="project-detail">
+            <p class="project-category">iOS Development &amp; Game Design</p>
+            <h3 id="pink-ops-heading" class="project-title">Pink Ops</h3>
+
+            <p class="tools">Swift · SwiftUI · Xcode</p>
+            <p class="meta">November 2026</p>
+
+            <h4>Project Overview</h4>
+            <p>
+              Pink Ops is an interactive target-practice game I developed
+              using SwiftUI.
+            </p>
+            <p>
+              The project combines a playful visual design with gesture-based
+              interactions, scoring mechanics, and animations to create an
+              engaging iOS gaming experience.
+            </p>
+
+            <h4>My Contribution</h4>
+            <p>
+              I developed the game's interface and gameplay interactions
+              using SwiftUI. My work included designing the home screen
+              and instructions, implementing a draggable crosshair,
+              creating scoring and power-shot mechanics, and adding
+              animated visual feedback.
+            </p>
+            <p>
+              I also implemented game state management and reset functionality.
+            </p>
+
+            <h4>Key Features</h4>
+            <ul>
+              <li>
+                <strong>Custom Game Interface:</strong>
+                A pink-themed design with a home screen and instructions.
+              </li>
+              <li>
+                <strong>Gesture-Based Controls:</strong>
+                Tap interaction, a draggable crosshair, and a long-press
+                power shot.
+              </li>
+              <li>
+                <strong>Score Tracking:</strong>
+                Updates the player's score during gameplay.
+              </li>
+              <li>
+                <strong>Power-Shot Mechanic:</strong>
+                Unlocks a special shot after accumulating regular hits.
+              </li>
+              <li>
+                <strong>Animations:</strong>
+                Provides visual feedback and effects during gameplay.
+              </li>
+              <li>
+                <strong>Game Reset:</strong>
+                Allows players to restart their session.
+              </li>
+            </ul>
+
+            <h4>Skills Demonstrated</h4>
+            <p>
+              Swift · SwiftUI · iOS Development · Gesture Recognition ·
+              State Management · UI Design · Animation
+            </p>
+
+            <h4>What I Learned</h4>
+            <p>
+              Developing Pink Ops helped me strengthen my understanding of
+              SwiftUI state management, gesture handling, and animation.
+              It also gave me the opportunity to combine technical
+              implementation with creative interface design, something
+              I particularly enjoy about frontend development.
+            </p>
+          </article>
+        </div>
+      </section>
+    </section>
+
+      <!-- PROJECT 4 -->
+      <section
+        id="unix-shell"
+        class="portfolio-project"
+        aria-labelledby="unix-shell-heading"
+      >
+        <div class="container">
+          <article class="project-detail">
+            <p class="project-category">Systems Programming</p>
+            <h3 id="unix-shell-heading" class="project-title">
+              Unix Command-Line Shell
+            </h3>
+
+            <p class="tools">C · Unix/Linux · POSIX APIs · Bash</p>
+
+            <h4>Project Overview</h4>
+            <p>
+              I built a Unix-style command-line shell in C that allows
+              users to execute commands through an interactive interface
+              or batch input.
+            </p>
+            <p>
+              The project explores how operating systems create processes,
+              execute programs, and coordinate command execution.
+            </p>
+
+            <h4>My Contribution</h4>
+            <p>
+              I implemented command parsing and execution using POSIX
+              system calls. The shell supports multiple commands separated
+              by semicolons and uses process creation and synchronization
+              to execute external programs.
+            </p>
+
+            <h4>Key Features</h4>
+            <ul>
+              <li>
+                <strong>Interactive Mode:</strong>
+                Accepts and executes commands entered by users.
+              </li>
+              <li>
+                <strong>Batch Mode:</strong>
+                Processes commands from an input file.
+              </li>
+              <li>
+                <strong>Multiple Commands:</strong>
+                Supports semicolon-separated commands.
+              </li>
+              <li>
+                <strong>Process Creation:</strong>
+                Uses <code>fork()</code> to create child processes.
+              </li>
+              <li>
+                <strong>Program Execution:</strong>
+                Uses <code>execvp()</code> to execute external programs.
+              </li>
+              <li>
+                <strong>Process Synchronization:</strong>
+                Uses <code>waitpid()</code> to manage child process completion.
+              </li>
+            </ul>
+
+            <h4>Skills Demonstrated</h4>
+            <p>
+              C Programming · Operating Systems · Process Management ·
+              Systems Programming · Command Parsing · Debugging
+            </p>
+
+            <h4>What I Learned</h4>
+            <p>
+              Building the shell helped me understand how user commands
+              interact with the operating system and how processes are
+              created and managed. It also strengthened my ability to
+              work with low-level system calls and debug command-line
+              applications.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJECT 5 -->
+      <section
+        id="cpu-scheduler"
+        class="portfolio-project"
+        aria-labelledby="cpu-scheduler-heading"
+      >
+        <div class="container">
+          <article class="project-detail">
+            <p class="project-category">Operating Systems &amp; Algorithms</p>
+            <h3 id="cpu-scheduler-heading" class="project-title">
+              Multilevel Queue CPU Scheduler
+            </h3>
+
+            <p class="tools">
+              C++ · Standard Template Library (STL) · Queues · Vectors
+            </p>
+
+            <h4>Project Overview</h4>
+            <p>
+              I developed a CPU scheduling simulator in C++ to model how
+              different scheduling algorithms organize and execute processes.
+            </p>
+            <p>
+              The simulator calculates performance metrics to help compare
+              scheduling behavior and understand how operating systems
+              allocate CPU time.
+            </p>
+
+            <h4>My Contribution</h4>
+            <p>
+              I implemented four scheduling algorithms and used C++ data
+              structures to manage processes and simulate CPU execution.
+              I also implemented calculations for waiting time, turnaround
+              time, and response time to evaluate scheduling performance.
+            </p>
+
+            <h4>Key Features</h4>
+            <ul>
+              <li>
+                <strong>Priority Scheduling:</strong>
+                Schedules processes based on priority.
+              </li>
+              <li>
+                <strong>Shortest Job First:</strong>
+                Selects processes based on their execution time.
+              </li>
+              <li>
+                <strong>Round Robin:</strong>
+                Allocates CPU time using time slices.
+              </li>
+              <li>
+                <strong>First Come, First Served:</strong>
+                Executes processes in arrival order.
+              </li>
+              <li>
+                <strong>Process Tracking:</strong>
+                Manages process information throughout the simulation.
+              </li>
+              <li>
+                <strong>Performance Metrics:</strong>
+                Calculates waiting, turnaround, and response times.
+              </li>
+            </ul>
+
+            <h4>Skills Demonstrated</h4>
+            <p>
+              C++ Programming · Algorithms · Data Structures · Operating
+              Systems · Simulation · Problem-Solving
+            </p>
+
+            <h4>What I Learned</h4>
+            <p>
+              This project strengthened my understanding of CPU scheduling
+              algorithms and the trade-offs involved in allocating processing
+              time. It also helped me apply data structures and algorithmic
+              thinking to simulate operating system behavior.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJECT 6 -->
+      <section
+        id="music-library"
+        class="portfolio-project"
+        aria-labelledby="music-library-heading"
+      >
+        <div class="container">
+          <article class="project-detail">
+            <p class="project-category">iOS Application Development</p>
+            <h3 id="music-library-heading" class="project-title">
+              Music Library
+            </h3>
+
+            <p class="tools">Swift · SwiftUI · Xcode</p>
+
+            <h4>Project Overview</h4>
+            <p>
+              I developed a music library application using Swift and SwiftUI
+              that allows users to organize and interact with a collection
+              of songs.
+            </p>
+            <p>
+              The project focuses on building a multi-screen iOS experience
+              with reusable interface components and application state
+              management.
+            </p>
+
+            <h4>My Contribution</h4>
+            <p>
+              I developed the application's song management interface and
+              supporting data models. I implemented features for adding
+              songs, viewing song details, managing favorites and playlists,
+              assigning ratings, and tracking recently played songs.
+            </p>
+
+            <h4>Key Features</h4>
+            <ul>
+              <li>
+                <strong>Song Library:</strong>
+                View and manage a collection of songs.
+              </li>
+              <li>
+                <strong>Favorites:</strong>
+                Mark songs as favorites for easier access.
+              </li>
+              <li>
+                <strong>Playlists:</strong>
+                Organize songs into playlists.
+              </li>
+              <li>
+                <strong>Ratings:</strong>
+                Assign ratings to songs.
+              </li>
+              <li>
+                <strong>Recently Played:</strong>
+                Track recently accessed songs.
+              </li>
+              <li>
+                <strong>Navigation:</strong>
+                Move between multiple SwiftUI views.
+              </li>
+              <li>
+                <strong>State Management:</strong>
+                Keep application data consistent across views.
+              </li>
+            </ul>
+
+            <h4>Skills Demonstrated</h4>
+            <p>
+              iOS Development · SwiftUI · Object-Oriented Programming ·
+              State Management · UI Design · Data Modeling
+            </p>
+
+            <h4>What I Learned</h4>
+            <p>
+              This project strengthened my understanding of organizing a
+              larger SwiftUI application, connecting multiple views, and
+              managing data across different parts of the interface.
+              It also gave me more experience designing user-facing
+              features around a shared data model.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJECT 7: Keeps the existing homepage anchor working. -->
+      <section
+        id="infection-prevention"
+        class="portfolio-project"
+        aria-labelledby="ar-heading"
+      >
+        <div class="container">
+          <article class="project-detail">
+            <p class="project-category">
+              Healthcare Technology Research &amp; Design
+            </p>
+            <h3 id="ar-heading" class="project-title">
+              AR in Infection Prevention
+            </h3>
+
+            <p class="tools">
+              Augmented Reality Concepts · Clinical Research ·
+              Materials Research · Human-Centered Design
+            </p>
+            <p class="meta">February 2025–May 2026</p>
+
+            <h4>Project Overview</h4>
+            <p>
+              I collaborated with a five-person interdisciplinary team to
+              explore how augmented reality glasses could support healthcare
+              professionals in preventing central line-associated bloodstream
+              infections (CLABSIs).
+            </p>
+            <p>
+              Our goal was to investigate a technology concept that could
+              address a real clinical challenge through accessible,
+              practical design.
+            </p>
+
+            <h4>My Contribution</h4>
+            <p>
+              I worked with my teammates to research clinical needs,
+              investigate potential materials, and explore design
+              considerations. We consulted healthcare professionals to
+              better understand the problem and inform our proposed solution.
+            </p>
+            <p>
+              I also participated in presenting our concept at the GCI
+              Showcase, where our team earned third runner-up recognition.
+            </p>
+
+            <h4>Key Highlights</h4>
+            <ul>
+              <li>
+                <strong>Interdisciplinary Collaboration:</strong>
+                Worked with a five-person team.
+              </li>
+              <li>
+                <strong>Clinical Research:</strong>
+                Investigated infection prevention challenges and
+                healthcare needs.
+              </li>
+              <li>
+                <strong>Professional Consultation:</strong>
+                Gathered insights from healthcare professionals.
+              </li>
+              <li>
+                <strong>Concept Development:</strong>
+                Explored the design and potential application of
+                augmented reality glasses.
+              </li>
+              <li>
+                <strong>Project Presentation:</strong>
+                Presented the proposed solution at the GCI Showcase.
+              </li>
+              <li>
+                <strong>Recognition:</strong>
+                Earned third runner-up.
+              </li>
+            </ul>
+
+            <h4>Skills Demonstrated</h4>
+            <p>
+              Cross-Functional Collaboration · Research · Human-Centered
+              Design · Problem-Solving · Technical Communication · Presentation
+            </p>
+
+            <h4>What I Learned</h4>
+            <p>
+              This experience showed me the importance of understanding
+              users' needs before proposing a technical solution. It also
+              strengthened my ability to collaborate across disciplines,
+              incorporate professional feedback, and communicate engineering
+              ideas to different audiences.
+            </p>
+
+            <p class="project-status">
+              <strong>Project Stage:</strong> Research and concept development
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJECT 8 -->
+      <section
+        id="monster-tournament"
+        class="portfolio-project"
+        aria-labelledby="monster-tournament-heading"
+      >
+        <div class="container">
+          <article class="project-detail">
+            <p class="project-category">Data Structures &amp; Algorithms</p>
+            <h3 id="monster-tournament-heading" class="project-title">
+              Monster Tournament Simulator
+            </h3>
+
+            <p class="tools">
+              C++ · Binary Trees · Recursion · Graphviz DOT
+            </p>
+
+            <h4>Project Overview</h4>
+            <p>
+              I developed a tournament simulator in C++ that models single-
+              and double-elimination competitions using binary tree
+              structures and recursive algorithms.
+            </p>
+            <p>
+              The project explores how hierarchical data structures can
+              represent tournament progression.
+            </p>
+
+            <h4>My Contribution</h4>
+            <p>
+              I implemented the tournament structures and recursive logic
+              used to model competition brackets. I also generated Graphviz
+              DOT representations to visualize tournament organization
+              and match outcomes.
+            </p>
+
+            <h4>Key Features</h4>
+            <ul>
+              <li>
+                <strong>Single Elimination:</strong>
+                Simulates a tournament where a loss eliminates a competitor.
+              </li>
+              <li>
+                <strong>Double Elimination:</strong>
+                Models tournaments where competitors can lose twice
+                before elimination.
+              </li>
+              <li>
+                <strong>Binary Trees:</strong>
+                Uses hierarchical data structures to represent
+                tournament progression.
+              </li>
+              <li>
+                <strong>Recursion:</strong>
+                Applies recursive algorithms to manage tournament structures.
+              </li>
+              <li>
+                <strong>Bracket Visualization:</strong>
+                Generates Graphviz DOT output to visualize tournament brackets.
+              </li>
+            </ul>
+
+            <h4>Skills Demonstrated</h4>
+            <p>
+              C++ Programming · Data Structures · Algorithms · Recursion ·
+              Object-Oriented Programming · Data Visualization
+            </p>
+
+            <h4>What I Learned</h4>
+            <p>
+              This project helped me understand recursive problem-solving
+              and how tree structures can organize and visualize complex
+              relationships. It also strengthened my ability to translate
+              abstract data structures into a working simulation.
+            </p>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <section class="section contact-section" aria-labelledby="connect-heading">
+      <div class="container">
+        <h2 id="connect-heading">Let’s connect.</h2>
+        <p>Interested in learning more about my projects?</p>
+
+        <div class="button-group centered">
+          <a class="button" href="mailto:awohbiahacademic@gmail.com">
+            Email me
+          </a>
+          <a class="button button-secondary" href="index.html">
+            Return to home
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Awoh Biah Owusu-Agyemang.</p>
+    </div>
+  </footer>
+</body>
+</html>

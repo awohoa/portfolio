@@ -1,0 +1,562 @@
+/* Shared colors keep both pages visually consistent.
+   Dark text and deep purple accents contrast with light backgrounds. */
+    :root {
+        --background: #faf7f2;
+        --surface: #ffffff;
+        --tinted: #eee8f4;
+        --text: #26212e;
+        --muted: #5d5566;
+        --accent: #563475;
+        --accent-hover: #3d2355;
+        --border: #d7cddd;
+    }
+  
+  /* Includes padding and borders in an element's specified width. */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--background);
+    font-size: 0.95rem;
+  }
+  
+  /* Limits line length and leaves comfortable space at screen edges. */
+  .container {
+    width: min(1100px, 90%);
+    margin-inline: auto;
+  }
+  
+  /* Heading sizes and spacing create visual hierarchy. */
+  h1,
+  h2,
+  h3 {
+    line-height: 1.2;
+    margin-top: 0;
+  }
+  
+  h1 {
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    max-width: 850px;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.035em;
+    font-size: clamp(2rem, 4vw, 3rem);
+
+  }
+  
+  h2 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-bottom: 1rem;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    color: var(--accent);
+    text-underline-offset: 0.25em;
+  }
+  
+  a:hover {
+    color: var(--accent-hover);
+  }
+  
+  /* A visible focus outline helps keyboard users locate their position.
+     Its white separation keeps it visible against purple buttons too. */
+  a:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 4px;
+    box-shadow: 0 0 0 4px white;
+  }
+  
+  ul {
+    padding-left: 1.3rem;
+  }
+  
+  li + li {
+    margin-top: 0.45rem;
+  }
+  
+  /* Hidden until focused with the keyboard. */
+  .skip-link {
+    position: absolute;
+    top: -100px;
+    left: 1rem;
+    z-index: 10;
+    padding: 0.75rem 1rem;
+    background: white;
+    font-weight: bold;
+  }
+  
+  .skip-link:focus {
+    top: 1rem;
+  }
+  
+  /* Shared header: the same location and styling on both pages. */
+  .site-header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .header-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 1rem;
+  }
+  
+  .site-name {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* Large link areas and spacing support easier target selection. */
+  .site-header nav {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .site-header nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .site-header nav a:hover {
+    background: var(--tinted);
+  }
+  
+  /* Current page is indicated with both background and underline. */
+  .site-header nav a[aria-current="page"] {
+    background: var(--tinted);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  
+  .hero,
+  .page-intro {
+    padding-block: 5rem;
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, var(--background), var(--tinted));
+  }
+  
+  .eyebrow,
+  .project-category {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+  }
+  
+  .eyebrow {
+    text-transform: uppercase;
+  }
+  
+  .intro {
+    max-width: 720px;
+    font-size: 1.2rem;
+    color: var(--muted);
+    font-size: 1.05rem;
+  }
+  
+  /* Flexbox lets buttons wrap rather than overflow on small screens. */
+  .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.75rem;
+  }
+  
+  /* Padding makes the entire link a generous clickable target.
+     The button's background and clickable area are the same size. */
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.75rem 1.4rem;
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    background: var(--accent);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+    color: white;
+  }
+  
+  .button-secondary {
+    background: transparent;
+    color: var(--accent);
+  }
+  
+  .button-secondary:hover {
+    background: var(--tinted);
+    color: var(--accent-hover);
+  }
+  
+  /* Generous space separates sections; tighter space groups related content. */
+  .section {
+    padding-block: 4rem;
+  }
+  
+  .section-tinted {
+    background: var(--tinted);
+  }
+  
+  .two-column {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  
+  /* Consistent cards group related project information.
+     This demonstrates Gestalt proximity as well as consistency. */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    padding: 1.75rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+  
+  .text-link {
+    display: inline-block;
+    padding-block: 0.6rem;
+    font-weight: bold;
+  }
+  
+  .meta {
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  
+  .experience-list {
+    max-width: 850px;
+    margin-top: 2rem;
+  }
+  
+  .experience-item {
+    border-left: 3px solid var(--accent);
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .experience-item h3 {
+    margin-bottom: 0.35rem;
+  }
+  
+  .contact-section {
+    text-align: center;
+  }
+  
+  .centered {
+    justify-content: center;
+  }
+  
+  .site-footer {
+    padding-block: 1.5rem;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+  }
+  
+  .site-footer p {
+    margin: 0;
+  }
+  
+  /* Project-page navigation uses recognizable text labels. */
+  .project-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+  
+  .project-navigation a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.6rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .project-navigation a:hover {
+    background: var(--tinted);
+  }
+  
+  .project-detail {
+    max-width: 850px;
+  }
+  
+  .project-detail h3 {
+    margin-top: 2rem;
+  }
+  
+  /* Keeps anchor destinations comfortably spaced from the top. */
+  .project-section {
+    scroll-margin-top: 1rem;
+  }
+  
+  /* Tools are displayed as a list rather than fake interactive buttons. */
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .tag-list li {
+    margin: 0;
+    padding: 0.3rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+    font-size: 0.9rem;
+  }
+  
+  /* These rules support screenshots if you add them later. */
+  figure {
+    margin: 2rem 0 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  figcaption {
+    margin-top: 0.75rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  
+  /* Prevent long text from pushing content beyond small screens. */
+  .card,
+  .project-detail,
+  .intro {
+    overflow-wrap: anywhere;
+  }
+  
+  /* Responsive layout: stack columns and cards on smaller screens. */
+  @media (max-width: 800px) {
+    .header-layout {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .two-column,
+    .card-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .two-column {
+      gap: 1.5rem;
+    }
+  
+    .hero,
+    .page-intro {
+      padding-block: 3rem;
+    }
+  
+    .section {
+      padding-block: 3rem;
+    }
+}
+
+/* Creates two columns for the greeting and portrait. */
+.hero-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .hero-text {
+    min-width: 0;
+  }
+  
+  /* Fits the photo into a portrait shape without stretching it. */
+  /* Circular portrait positioned on the right. */
+.hero-photo {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    justify-self: end;
+    border-radius: 50%;
+    border: 5px solid var(--surface);
+    box-shadow: 0 12px 30px rgb(38 33 46 / 12%);
+  }
+  
+  /* Places the photo below the greeting on smaller screens. */
+  @media (max-width: 800px) {
+    .hero-layout {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  
+    .hero-photo {
+      justify-self: center;
+      max-width: 300px;
+    }
+  }
+
+  /* PROJECTS PAGE
+   Open sections and subtle dividers replace boxed project cards. */
+
+.projects-page .page-intro {
+    padding-block: 3rem 2rem;
+  }
+  
+  .projects-page .page-intro h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+  
+  .projects-page .intro {
+    font-size: 1.05rem;
+  }
+  
+  /* Names remain visible so visitors can jump directly to any project. */
+  .projects-page .project-navigation {
+    margin-top: 1.5rem;
+    gap: 0.65rem;
+  }
+  
+  .projects-page .project-navigation a {
+    font-size: 0.9rem;
+  }
+  
+  /* Visually separates featured work from the additional projects. */
+  .project-group-heading {
+    padding-top: 2rem;
+  }
+  
+  .project-group-heading h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 0;
+  }
+  
+  /* Each project is a full-width section, not a card. */
+  .portfolio-project {
+    padding-block: 2.5rem;
+    scroll-margin-top: 1.5rem;
+  }
+  
+  /* Dividers separate projects without enclosing them in boxes. */
+  .portfolio-project + .portfolio-project > .container {
+    border-top: 1px solid var(--border);
+    padding-top: 2.5rem;
+  }
+  
+  .projects-page .project-detail {
+    max-width: 850px;
+    font-size: 1rem;
+  }
+  
+  /* Titles are larger than the subsection headings. */
+  .projects-page .project-title {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+  }
+  
+  .projects-page .project-detail h4 {
+    font-size: 1.05rem;
+    line-height: 1.4;
+    margin-top: 1.75rem;
+    margin-bottom: 0.65rem;
+  }
+  
+  /* Technologies are emphasized without looking like clickable buttons. */
+  .projects-page .tools {
+    color: var(--accent);
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .projects-page .meta {
+    font-size: 0.9rem;
+  }
+  
+  .projects-page .project-detail ul {
+    margin-block: 0.75rem 1.25rem;
+  }
+  
+  .projects-page .project-detail li {
+    margin-bottom: 0.65rem;
+  }
+  
+  /* Status uses a written label, not color alone. */
+  .project-status {
+    margin-top: 1.75rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--accent);
+  }
+  
+  /* Makes system-call names distinguishable within descriptions. */
+  .projects-page code {
+    font-family: Consolas, Monaco, monospace;
+    font-size: 0.95em;
+    overflow-wrap: anywhere;
+  }
+  
+  @media (max-width: 800px) {
+    .projects-page .page-intro {
+      padding-block: 2.5rem 1.5rem;
+    }
+  
+    .portfolio-project {
+      padding-block: 2rem;
+    }
+  
+    .portfolio-project + .portfolio-project > .container {
+      padding-top: 2rem;
+    }
+  }

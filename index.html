@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Makes the layout scale properly on phones and tablets. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Awoh Biah Owusu-Agyemang's Portfolio."
+  >
+
+  <title>Home | Awoh Biah Owusu-Agyemang</title>
+
+  <!-- Both pages use the same CSS file for consistent styling. -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Keyboard users can skip repeated navigation. -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-layout">
+      <!-- Clicking the name always returns to the homepage. -->
+      <a class="site-name" href="index.html">Awoh Biah Owusu-Agyemang</a>
+
+      <nav aria-label="Main navigation">
+        <!-- aria-current identifies the current page.
+             The CSS also underlines it, so color is not the only cue. -->
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class=" "hero-text">
+            <p class="eyebrow">Student · Software Engineering · Business Analytics</p>
+            <h1>Hi, I’m Awoh.</h1>
+          </div>
+          <img
+          class = "hero-photo"
+          src = "Awoh.jpeg"
+          alt = "Me"
+          width = "320"
+          height= "320"
+          >
+        </div>
+    </section>
+
+    <section class="section" aria-labelledby="about-heading">
+      <div class="container two-column">
+        <div>
+            <p class="eyebrow">About Me</p>
+            <p>
+            I enjoy frontend software development and finding patterns through data hence the combination
+            of software engineering and business analytics. 
+            </p>
+            <p>
+            My goal is to start off my career as a front-end developer and eventually transition into product 
+            management, combining technical skills with an understanding of people's needs to create meaningful
+            solutions. 
+            </p>
+            <p>
+            Outside of school, I enjoy coding, playing Call of Duty, listening to music, and watching cartoons, 
+            especially King of the Hill. I love finding ways to bring my creativity and personality into the 
+            projects I build
+            </p>
+            <p>
+            Building a financially secure future motivates me to keep learning, improve my skills, and explore new 
+            challenges.
+            </p>
+            <p>
+            Through this portfolio, I hope to showcase my technical abilities, personal growth, and the projects that 
+            have shaped my journey as I work toward my career goal.
+            </p>
+    
+            <!-- This link opens the second HTML page. -->
+            <div class="button-group">
+              <a class="button" href="projects.html">Explore my projects</a>
+            </div>
+        </div>
+
+        <!-- Gestalt principle of proximity. -->
+        <aside class="card" aria-labelledby="education-heading">
+          <h3 id="education-heading">Education</h3>
+          <p><strong>School: </strong> Chapman University</p>
+          <p><strong>Year: </strong> Junior</p>
+          <p><strong>Major: </strong> B.S Software Engineering</p>
+          <p><strong>Minor:</strong> Business Analytics</p>
+          <p><strong>Graduation: </strong> May 2028</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <section class="section section-tinted" aria-labelledby="featured-heading">
+      <div class="container">
+        <p class="eyebrow">Featured Projects</p>
+        <p>Projects that reflect my technical and collaborative interests.</p>
+
+        <!-- Project 1 -->
+        <div class="card-grid">
+          <article class="card">
+            <p class="project-category">Data & Analytics</p>
+            <h3>LA Business Pulse</h3>
+            <p>
+              An interactive analytics dashboard exploring trends across more than 
+              600,000 Los Angeles business records using Python, SQL and React
+            </p>
+            <!--- <a class="text-link" href="projects.html#infection-prevention"> -->
+              Explore the dashboard <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card">
+            <p class="project-category">Systems Programming</p>
+            <h3>Virtual Memory Manager</h3>
+            <p>
+                A virtual memory simulator built in C that implements address translation,
+                demand paging, and page replacement algorithms to analyze memory performance.
+            </p>
+            <!-- <a class="text-link" href="projects.html#bakery-bash"> -->
+              Explore the simulator <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- Project 3 -->
+            <article class="card">
+                <p class="project-category">iOS Development & Game Design</p>
+                <h3>Pink Ops</h3>
+                <p>
+                    An interactive iOS target practice game built with SwiftUI, featuring gesture-based
+                    controls, score tracking and animated gameplay.
+                </p>
+            
+                <a class="text-link" href="projects.html#pink-ops">
+                Explore the game <span aria-hidden="true">→</span>
+                </a>
+            </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience and leadership displayed in a consistent vertical layout. -->
+<section
+class="section"
+aria-labelledby="experience-heading"
+>
+<div class="container">
+  <h2 id="experience-heading">Experience &amp; Leadership</h2>
+
+  <div class="experience-list">
+
+    <!-- Product management experience. -->
+    <article class="experience-item">
+      <h3>Product Management Intern</h3>
+      <p class="meta">
+        Inpath Technologies · Accra, Ghana · January 2026
+      </p>
+
+      <p>
+        During my internship at Inpath Technologies, I gained hands-on
+        experience with product development and learned how business
+        needs and user feedback influence technical decisions.
+      </p>
+
+      <ul>
+        <li>
+          Supported requirements gathering and product roadmap
+          planning for the TalentID discount program.
+        </li>
+        <li>
+          Conducted market research and reviewed user feedback
+          to better understand product needs.
+        </li>
+        <li>
+          Contributed to sprint planning and discussions around
+          product priorities.
+        </li>
+      </ul>
+    </article>
+
+    <!-- Leadership and community outreach. -->
+    <article class="experience-item">
+      <h3>Outreach &amp; Partnership Coordinator</h3>
+      <p class="meta">
+        Girls Who Code · Orange, CA · August 2026–Present
+      </p>
+
+      <p>
+        I help strengthen connections between our Girls Who Code
+        community and organizations that can provide educational
+        and professional opportunities.
+      </p>
+
+      <ul>
+        <li>
+          Research local technology companies and organizations
+          for potential partnerships and technical tours.
+        </li>
+        <li>
+          Support outreach efforts to connect members with
+          industry professionals and opportunities.
+        </li>
+        <li>
+          Manage LinkedIn communications to increase
+          organizational visibility and engagement.
+        </li>
+      </ul>
+    </article>
+
+    <!-- Communication and administrative experience. -->
+    <article class="experience-item">
+      <h3>Front Desk Office Assistant</h3>
+      <p class="meta">
+        Chapman University, Office of Admission · June 2026–Present
+      </p>
+
+      <p>
+        Working in Chapman's Office of Admission has strengthened
+        my communication, organization, and multitasking skills
+        in a fast-paced, student-facing environment.
+      </p>
+
+      <ul>
+        <li>
+          Assist prospective students and families by answering
+          questions and connecting them with university resources.
+        </li>
+        <li>
+          Handle high volumes of phone calls, emails,
+          and in-person inquiries.
+        </li>
+        <li>
+          Use university systems and Microsoft Teams
+          to support daily administrative operations.
+        </li>
+      </ul>
+    </article>
+
+    <!-- Volunteer teaching experience. -->
+    <article class="experience-item">
+      <h3>Tutor</h3>
+      <p class="meta">
+        Learn To Be · Remote · October 2024–Present
+      </p>
+
+      <p>
+        I help students build confidence in mathematics by breaking
+        down challenging concepts into understandable steps.
+      </p>
+
+      <ul>
+        <li>
+          Provide individualized tutoring in algebra,
+          geometry, and calculus.
+        </li>
+        <li>
+          Adapt explanations and teaching approaches
+          to students' different learning needs.
+        </li>
+        <li>
+          Help students develop stronger problem-solving
+          and quantitative reasoning skills.
+        </li>
+      </ul>
+    </article>
+
+  </div>
+</div>
+</section>
+   <!-- Skills demonstrated through the featured projects. -->
+   <!-- Technical skills organized into four consistent cards. -->
+<section
+class="section section-tinted"
+aria-labelledby="skills-heading"
+>
+<div class="container">
+  <h2 id="skills-heading">Technical Skills</h2>
+
+  <p>
+    Languages, frameworks, and tools I've worked with through
+    coursework, projects, and professional experience.
+  </p>
+
+  <div class="card-grid">
+
+    <article class="card">
+      <h3>Languages &amp; Web Technologies</h3>
+      <ul>
+        <li>Python</li>
+        <li>C++</li>
+        <li>C</li>
+        <li>Java</li>
+        <li>Swift</li>
+        <li>SQL</li>
+        <li>HTML and CSS</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>Frameworks &amp; Libraries</h3>
+      <ul>
+        <li>React</li>
+        <li>SwiftUI</li>
+        <li>Pandas</li>
+        <li>Matplotlib</li>
+        <li>Seaborn</li>
+        <li>Recharts</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>Tools &amp; Technologies</h3>
+      <ul>
+        <li>Git and GitHub</li>
+        <li>VS Code</li>
+        <li>Xcode</li>
+        <li>Vite</li>
+        <li>SQLite</li>
+        <li>Bash</li>
+        <li>Figma</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>Development Concepts</h3>
+      <ul>
+        <li>Data Structures &amp; Algorithms</li>
+        <li>Object-Oriented Programming</li>
+        <li>Operating Systems</li>
+        <li>Data Analysis</li>
+        <li>Agile Development</li>
+      </ul>
+    </article>
+
+  </div>
+</div>
+</section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Awoh Biah Owusu-Agyemang</p>
+    </div>
+  </footer>
+</body>
+</html>
